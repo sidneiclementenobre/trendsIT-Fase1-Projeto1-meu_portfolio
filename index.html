@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Nome | Portfólio Profissional</title>
+    <!-- Google Fonts (Requisito de Ativos) -->
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ícones (Lucide ou FontAwesome via CDN) -->
+    <link rel="stylesheet" href="https://cloudflare.com" />
+    <!-- Nosso CSS (Criaremos no Marco 2) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegação Funcional -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#" class="logo">Dev.Portfolio</a>
+        <ul class="nav-menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção Biográfica -->
+      <section id="sobre" class="section-sobre">
+        <div class="sobre-content">
+          <!-- Foto de perfil com atributo ALT obrigatório para acessibilidade -->
+          <img
+            src="https://picsum.photos"
+            alt="Foto de perfil profissional de [Seu Nome], sorrindo com fundo neutro"
+            class="profile-img"
+          />
+          <div class="sobre-texto">
+            <h1>Olá, eu sou <span class="highlight">[Seu Nome]</span></h1>
+            <h2>Desenvolvedor(a) de Software em Residência de TI</h2>
+            <p>
+              Escreva aqui uma breve biografia profissional pragmática. Foque
+              nas tecnologias que está dominando na residência, seus objetivos e
+              sua paixão por resolver problemas reais através do código.
+            </p>
+
+            <!-- Integração Social -->
+            <div class="social-links">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acessar meu GitHub"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acessar meu LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vitrine de Projetos (Mínimo de 2) -->
+      <section id="projetos" class="section-projetos">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projetos-grid">
+          <!-- Card Projeto 1 -->
+          <article class="projeto-card">
+            <div class="projeto-info">
+              <h3>Projeto 1: Desafio de Algoritmos</h3>
+              <p>
+                Resolução de problemas de lógica aplicados a estruturas de
+                controle. Desenvolvido para consolidação dos fundamentos de
+                computação.
+              </p>
+              <a
+                href="https://github.com/projeto1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-projeto"
+              >
+                Ver Repositório <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card Projeto 2 -->
+          <article class="projeto-card">
+            <div class="projeto-info">
+              <h3>Projeto 2: Estrutura Semântica</h3>
+              <p>
+                Desenvolvimento do esqueleto estrutural de uma aplicação web
+                focando em SEO e acessibilidade de leitores de tela.
+              </p>
+              <a
+                href="https://github.com/projeto2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-projeto"
+              >
+                Ver Repositório <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulário ou Canal de Contato -->
+      <section id="contato" class="section-contato">
+        <h2 class="section-title">Vamos conversar?</h2>
+        <p>
+          Se você é um Tech Recruiter ou líder técnico, entre em contato através
+          do formulário abaixo ou diretamente pelo meu e-mail profissional.
+        </p>
+
+        <form class="contato-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Seu nome ou empresa"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail Profissional:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="seu-email@dominio.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Como posso ajudar sua equipe técnica?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>
+        &copy; 2026 [Seu Nome]. Desenvolvido com HTML5 e CSS3 Puro para a
+        Residência em TI.
+      </p>
+    </footer>
+  </body>
+</html>

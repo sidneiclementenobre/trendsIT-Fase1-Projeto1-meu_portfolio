@@ -249,3 +249,54 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.projeto-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projeto-tags span {
+    background-color: var(--border-color);
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.projeto-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-projeto.primary {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn-projeto.primary:hover {
+    background-color: var(--accent-hover);
+    color: var(--bg-color);
+}
+
+.btn-projeto.secondary {
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn-projeto.secondary:hover {
+    background-color: var(--border-color);
+}

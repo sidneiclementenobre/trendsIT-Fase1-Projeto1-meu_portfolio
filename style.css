@@ -105,6 +105,14 @@ section {
     font-weight: 400;
 }
 
+.sobre-texto p {
+    text-align: left;
+    font-size: 0.95rem;
+    margin: 1rem auto 0 auto;
+    max-width: 95%;
+    color: var(--text-secondary);
+}
+
 .highlight {
     color: var(--accent-color);
 }
@@ -238,6 +246,11 @@ section {
     .section-sobre .sobre-content {
         flex-direction: row;
         text-align: left;
+    }
+
+    .sobre-texto p {
+        text-align: left;
+        max-width: 100%;
     }
 
     .social-links {
